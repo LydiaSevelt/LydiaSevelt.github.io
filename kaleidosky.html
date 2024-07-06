@@ -89,8 +89,24 @@
     </style>
 </head>
 <body>
-<div class="tabs">    <button class="tablinks" onclick="openTab(event, 'all')">All Images</button>    <button class="tablinks" onclick="openTab(event, 'kaleidosky')">kaleidosky</button>    <button class="tablinks" onclick="openTab(event, 'deviate')">deviate</button></div>
-<div id="all" class="tabcontent"><h1>Image Gallery - All Images</h1><ul><li><h2>11-kaleidosky-lydia_k55-base-1735707540.jpg <button onclick="copyToClipboard('11-kaleidosky-lydia_k55-base-1735707540.jpg')">Copy</button></h2><img src="11-kaleidosky-lydia_k55-base-1735707540.jpg" alt="11-kaleidosky-lydia_k55-base-1735707540.jpg" onclick="openImage(this)"></li><li><h2>17-kaleidosky-lydia_k55-1720383300.jpg <button onclick="copyToClipboard('17-kaleidosky-lydia_k55-1720383300.jpg')">Copy</button></h2><img src="17-kaleidosky-lydia_k55-1720383300.jpg" alt="17-kaleidosky-lydia_k55-1720383300.jpg" onclick="openImage(this)"></li></ul></div><li><h2>10-deviate-lydia_k55-base-1735707540.jpg <button onclick="copyToClipboard('10-deviate-lydia_k55-base-1735707540.jpg')">Copy</button></h2><img src="10-deviate-lydia_k55-base-1735707540.jpg" alt="10-deviate-lydia_k55-base-1735707540.jpg" onclick="openImage(this)"></li></ul></div><div id="kaleidosky" class="tabcontent"><h1>Image Gallery - kaleidosky</h1><ul><li><h2>11-kaleidosky-lydia_k55-base-1735707540.jpg <button onclick="copyToClipboard('11-kaleidosky-lydia_k55-base-1735707540.jpg')">Copy</button></h2><img src="11-kaleidosky-lydia_k55-base-1735707540.jpg" alt="11-kaleidosky-lydia_k55-base-1735707540.jpg" onclick="openImage(this)"></li><li><h2>17-kaleidosky-lydia_k55-1720383300.jpg <button onclick="copyToClipboard('17-kaleidosky-lydia_k55-1720383300.jpg')">Copy</button></h2><img src="17-kaleidosky-lydia_k55-1720383300.jpg" alt="17-kaleidosky-lydia_k55-1720383300.jpg" onclick="openImage(this)"></li></ul></div><div id="deviate" class="tabcontent"><h1>Image Gallery - deviate</h1><ul><li><h2>10-deviate-lydia_k55-base-1735707540.jpg <button onclick="copyToClipboard('10-deviate-lydia_k55-base-1735707540.jpg')">Copy</button></h2><img src="10-deviate-lydia_k55-base-1735707540.jpg" alt="10-deviate-lydia_k55-base-1735707540.jpg" onclick="openImage(this)"></li></ul></div><script>
+<div class="tabs"><button class="tablinks" onclick="openTab(event, 'all')">All Images</button>
+<button class="tablinks" onclick="openTab(event, 'kaleidosky')">kaleidosky</button>
+<button class="tablinks" onclick="openTab(event, 'deviate')">deviate</button>
+</div>
+<div id="all" class="tabcontent"><h1>Image Gallery - All Images</h1><ul>
+<li><h2>11-kaleidosky-lydia_k55-base-1735707540.jpg <button onclick="copyToClipboard('11-kaleidosky-lydia_k55-base-1735707540.jpg')">Copy</button></h2><div class="tooltip"><span class="tooltiptext">Not currently being displayed</span><img src="11-kaleidosky-lydia_k55-base-1735707540.jpg" alt="11-kaleidosky-lydia_k55-base-1735707540.jpg" class="base" onclick="openImage(this)"></div></li>
+<li><h2>17-kaleidosky-lydia_k55-1720383300.jpg <button onclick="copyToClipboard('17-kaleidosky-lydia_k55-1720383300.jpg')">Copy</button></h2><img src="17-kaleidosky-lydia_k55-1720383300.jpg" alt="17-kaleidosky-lydia_k55-1720383300.jpg" onclick="openImage(this)"></li>
+</ul></div>
+<li><h2>10-deviate-lydia_k55-base-1735707540.jpg <button onclick="copyToClipboard('10-deviate-lydia_k55-base-1735707540.jpg')">Copy</button></h2><img src="10-deviate-lydia_k55-base-1735707540.jpg" alt="10-deviate-lydia_k55-base-1735707540.jpg" onclick="openImage(this)"></li>
+</ul></div>
+<div id="kaleidosky" class="tabcontent"><h1>Image Gallery - kaleidosky</h1><ul>
+<li><h2>11-kaleidosky-lydia_k55-base-1735707540.jpg <button onclick="copyToClipboard('11-kaleidosky-lydia_k55-base-1735707540.jpg')">Copy</button></h2><div class="tooltip"><span class="tooltiptext">Not currently being displayed</span><img src="11-kaleidosky-lydia_k55-base-1735707540.jpg" alt="11-kaleidosky-lydia_k55-base-1735707540.jpg" class="base" onclick="openImage(this)"></div></li>
+<li><h2>17-kaleidosky-lydia_k55-1720383300.jpg <button onclick="copyToClipboard('17-kaleidosky-lydia_k55-1720383300.jpg')">Copy</button></h2><img src="17-kaleidosky-lydia_k55-1720383300.jpg" alt="17-kaleidosky-lydia_k55-1720383300.jpg" onclick="openImage(this)"></li>
+</ul></div>
+<div id="deviate" class="tabcontent"><h1>Image Gallery - deviate</h1><ul>
+<li><h2>10-deviate-lydia_k55-base-1735707540.jpg <button onclick="copyToClipboard('10-deviate-lydia_k55-base-1735707540.jpg')">Copy</button></h2><img src="10-deviate-lydia_k55-base-1735707540.jpg" alt="10-deviate-lydia_k55-base-1735707540.jpg" onclick="openImage(this)"></li>
+</ul></div>
+<script>
     function openTab(evt, tabName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
@@ -118,4 +134,4 @@
         newWindow.document.write("<html><head><title>" + img.alt + "</title></head><body style='margin:0'><img src='" + img.src + "' style='width:100%'></body></html>");
     }
 
-document.querySelector(".tablinks:nth-child(3)").click();</script></body></html>
+document.querySelector(".tablinks:nth-child(2)").click();</script></body></html>
