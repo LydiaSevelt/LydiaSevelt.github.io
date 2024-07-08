@@ -78,7 +78,7 @@
             justify-content: center;
         }
         .poster-item img {
-            width: 100%;
+            width: 150px;
             height: auto;
             cursor: pointer;
             border: 2px solid transparent;
@@ -89,6 +89,26 @@
             transform: scale(1.05);
             border-color: lightblue;
         }
+        .poster-item-small {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+        .poster-item-small img {
+            width: 100px;
+            height: auto;
+            cursor: pointer;
+            border: 2px solid transparent;
+            align-items: center;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .poster-item-small img:hover {
+            transform: scale(1.05);
+            border-color: lightblue;
+        }
+
         .base img {
             border-color: red;
         }
@@ -136,27 +156,27 @@
         </div>
     </div>
     <div class="poster-grid-smaller">
-        <div class="poster-item">
+        <div class="poster-item-small">
             <img src="poster2.jpg" alt="poster2.jpg" onclick="openImage(this)">
             <div class="poster-title">poster2.jpg</div>
             <button class="copy-button" onclick="copyToClipboard('https://lydiasevelt.github.io/poster2.jpg')">Copy Link</button>
         </div>
-        <div class="poster-item">
+        <div class="poster-item-small">
             <img src="poster3.jpg" alt="poster3.jpg" onclick="openImage(this)">
             <div class="poster-title">poster3.jpg</div>
             <button class="copy-button" onclick="copyToClipboard('https://lydiasevelt.github.io/poster3.jpg')">Copy Link</button>
         </div>
-        <div class="poster-item">
+        <div class="poster-item-small">
             <img src="poster4.jpg" alt="poster4.jpg" onclick="openImage(this)">
             <div class="poster-title">poster4.jpg</div>
             <button class="copy-button" onclick="copyToClipboard('https://lydiasevelt.github.io/poster4.jpg')">Copy Link</button>
         </div>
-        <div class="poster-item">
+        <div class="poster-item-small">
             <img src="poster5.jpg" alt="poster5.jpg" onclick="openImage(this)">
             <div class="poster-title">poster5.jpg</div>
             <button class="copy-button" onclick="copyToClipboard('https://lydiasevelt.github.io/poster5.jpg')">Copy Link</button>
         </div>
-        <div class="poster-item">
+        <div class="poster-item-small">
             <img src="poster6.jpg" alt="poster6.jpg" onclick="openImage(this)">
             <div class="poster-title">poster6.jpg</div>
             <button class="copy-button" onclick="copyToClipboard('https://lydiasevelt.github.io/poster6.jpg')">Copy Link</button>
