@@ -108,6 +108,26 @@
         .image-row .copy-button:hover {
             background-color: #666;
         }
+        .main-poster-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .main-poster-row img {
+            width: 150px;
+            cursor: pointer;
+        }
+        .poster-row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .poster-row img {
+            width: 100px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -119,12 +139,14 @@
 </div>
 <div id="all" class="tabcontent">
     <h1>Live Posters</h1>
-    <div class="image-row">
+    <div class="main-poster-row">
         <div>
-            <span class="poster1>https://lydiasevelt.github.io/poster1.jpg</span><br>
+            <span>https://lydiasevelt.github.io/poster1.jpg</span><br>
             <button onclick="copyToClipboard('poster1.jpg')">Copy Link</button><br>
             <img src="poster1.jpg" alt="poster1.jpg" class="poster1" onclick="openImage(this)">
-        </div><br>
+        </div>
+    </div>
+    <div class="poster-row">
         <div>
             <span>https://lydiasevelt.github.io/poster2.jpg</span><br>
             <button onclick="copyToClipboard('poster2.jpg')">Copy Link</button><br>
@@ -171,7 +193,7 @@
 
 <div id="kaleidosky" class="tabcontent">
     <h1>Live kaleidosky Poster</h1>
-    <div class="poster1">
+    <div class="main-poster-row">
         <div>
             <span>https://lydiasevelt.github.io/kaleidosky.jpg</span><br>
             <button onclick="copyToClipboard('kaleidosky.jpg')">Copy Link</button><br>
@@ -190,7 +212,7 @@
 
 <div id="magicland" class="tabcontent">
     <h1>Live magicland Poster</h1>
-    <div class="poster1">
+    <div class="main-poster-row">
         <div>
             <span>https://lydiasevelt.github.io/magicland.jpg</span><br>
             <button onclick="copyToClipboard('magicland.jpg')">Copy Link</button><br>
@@ -209,7 +231,7 @@
 
 <div id="deviate" class="tabcontent">
     <h1>Live deviate Poster</h1>
-    <div class="poster1">
+    <div class="main-poster-row">
         <div>
             <span>https://lydiasevelt.github.io/deviate.jpg</span><br>
             <button onclick="copyToClipboard('deviate.jpg')">Copy Link</button><br>
