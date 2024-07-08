@@ -7,14 +7,17 @@
             background-color: #2b2b2b;
             color: #f5f5f5;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
         .tabs {
-            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
             background-color: #333;
+            padding: 10px 0;
         }
         .tabs button {
             background-color: inherit;
-            float: left;
             border: none;
             outline: none;
             cursor: pointer;
@@ -32,104 +35,47 @@
         }
         .tabcontent {
             display: none;
-            padding: 6px 12px;
-            border-top: none;
+            padding: 20px;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 20px 0;
+        h1 {
             text-align: center;
         }
-        img {
-            width: 200px;
+        .poster-row, .main-poster-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .poster-item {
+            margin: 10px;
+            text-align: center;
+        }
+        .poster-item img {
+            width: 150px;
             height: auto;
             cursor: pointer;
+            border: 2px solid transparent;
+            transition: transform 0.3s, border-color 0.3s;
         }
-        .nodisp {
-            border: 2px solid yellow;
+        .poster-item img:hover {
+            transform: scale(1.05);
+            border-color: yellow;
         }
-        .base {
-            border: 2px solid red;
+        .base img {
+            border-color: red;
         }
-        .tooltip {
-            position: relative;
-            display: inline-block;
-            cursor: pointer;
-        }
-        .tooltip .tooltiptext {
-            visibility: hidden;
-            width: 160px;
+        .copy-button {
+            display: block;
+            margin: 10px auto;
+            padding: 5px 10px;
             background-color: #333;
-            color: #fff;
-            text-align: center;
-            border-radius: 5px;
-            padding: 5px;
-            position: absolute;
-            z-index: 1;
-            bottom: 125%;
-            left: 50%;
-            margin-left: -80px;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        .tooltip:hover .tooltiptext {
-            visibility: visible;
-            opacity: 1;
-        }
-        .tooltip .tooltiptext::after {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            margin-left: -5px;
-            border-width: 5px;
-            border-style: solid;
-            border-color: #333 transparent transparent transparent;
-        }
-        .image-row {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin-bottom: 20px;
-            font-size: 14px;
-            text-align: center;
-        }
-        .image-row img {
-            width: 100px;
+            color: #f5f5f5;
+            border: none;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
-        .image-row .poster1 {
-            width: 150px;
-            font-size: 16px;
-        }
-        .image-row .copy-button:hover {
+        .copy-button:hover {
             background-color: #666;
-        }
-        .main-poster-row {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
-            text-align: center;
-            font-size: 16px;
-        }
-        .main-poster-row img {
-            width: 150px;
-            cursor: pointer;
-        }
-        .poster-row {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .poster-row img {
-            width: 100px;
-            cursor: pointer;
         }
     </style>
 </head>
@@ -145,112 +91,118 @@
 <div id="all" class="tabcontent">
     <h1>Live Posters</h1>
     <div class="main-poster-row">
-        <div>
-            <span>https://lydiasevelt.github.io/poster1.jpg</span><br>
-            <button class="copy-button" onclick="copyToClipboard('poster1.jpg')">Copy Link</button><br>
-            <img src="poster1.jpg" alt="poster1.jpg" class="poster1" onclick="openImage(this)">
+        <div class="poster-item">
+            <span>https://lydiasevelt.github.io/poster1.jpg</span>
+            <button class="copy-button" onclick="copyToClipboard('poster1.jpg')">Copy Link</button>
+            <img src="poster1.jpg" alt="poster1.jpg" onclick="openImage(this)">
         </div>
     </div>
     <div class="poster-row">
-        <div>
-            <span>https://lydiasevelt.github.io/poster2.jpg</span><br>
-            <button class="copy-button" onclick="copyToClipboard('poster2.jpg')">Copy Link</button><br>
+        <div class="poster-item">
+            <span>https://lydiasevelt.github.io/poster2.jpg</span>
+            <button class="copy-button" onclick="copyToClipboard('poster2.jpg')">Copy Link</button>
             <img src="poster2.jpg" alt="poster2.jpg" onclick="openImage(this)">
         </div>
-        <div>
-            <span>https://lydiasevelt.github.io/poster3.jpg</span><br>
-            <button class="copy-button" onclick="copyToClipboard('poster3.jpg')">Copy Link</button><br>
+        <div class="poster-item">
+            <span>https://lydiasevelt.github.io/poster3.jpg</span>
+            <button class="copy-button" onclick="copyToClipboard('poster3.jpg')">Copy Link</button>
             <img src="poster3.jpg" alt="poster3.jpg" onclick="openImage(this)">
         </div>
-        <div>
-            <span>https://lydiasevelt.github.io/poster4.jpg</span><br>
-            <button class="copy-button" onclick="copyToClipboard('poster4.jpg')">Copy Link</button><br>
+        <div class="poster-item">
+            <span>https://lydiasevelt.github.io/poster4.jpg</span>
+            <button class="copy-button" onclick="copyToClipboard('poster4.jpg')">Copy Link</button>
             <img src="poster4.jpg" alt="poster4.jpg" onclick="openImage(this)">
         </div>
-        <div>
-            <span>https://lydiasevelt.github.io/poster5.jpg</span><br>
-            <button class="copy-button" onclick="copyToClipboard('poster5.jpg')">Copy Link</button><br>
+        <div class="poster-item">
+            <span>https://lydiasevelt.github.io/poster5.jpg</span>
+            <button class="copy-button" onclick="copyToClipboard('poster5.jpg')">Copy Link</button>
             <img src="poster5.jpg" alt="poster5.jpg" onclick="openImage(this)">
         </div>
-        <div>
-            <span>https://lydiasevelt.github.io/poster6.jpg</span><br>
-            <button class="copy-button" onclick="copyToClipboard('poster6.jpg')">Copy Link</button><br>
+        <div class="poster-item">
+            <span>https://lydiasevelt.github.io/poster6.jpg</span>
+            <button class="copy-button" onclick="copyToClipboard('poster6.jpg')">Copy Link</button>
             <img src="poster6.jpg" alt="poster6.jpg" onclick="openImage(this)">
         </div>
     </div>
 
     <h1>Current Posters In Rotation - Main</h1>
-    <ul>
-        <li>
-            <h2>11-kaleidosky-lydia_k55-base-1735707540.jpg <button onclick="copyToClipboard('11-kaleidosky-lydia_k55-base-1735707540.jpg')">Copy</button></h2>
-            <img src="11-kaleidosky-lydia_k55-base-1735707540.jpg" alt="11-kaleidosky-lydia_k55-base-1735707540.jpg" class="base" onclick="openImage(this)">
-        </li>
-        <li>
-            <h2>18-magicland-dj_snowwolf-base-1735707599.jpg <button onclick="copyToClipboard('18-magicland-dj_snowwolf-base-1735707599.jpg')">Copy</button></h2>
-            <img src="18-magicland-dj_snowwolf-base-1735707599.jpg" alt="18-magicland-dj_snowwolf-base-1735707599.jpg" class="base" onclick="openImage(this)">
-        </li>
-        <li>
-            <h2>10-deviate-lydia_k55-base-1735707540.jpg <button onclick="copyToClipboard('10-deviate-lydia_k55-base-1735707540.jpg')">Copy</button></h2>
-            <img src="10-deviate-lydia_k55-base-1735707540.jpg" alt="10-deviate-lydia_k55-base-1735707540.jpg" class="base" onclick="openImage(this)">
-        </li>
-    </ul>
+    <div class="poster-row">
+        <div class="poster-item base">
+            <h2>11-kaleidosky-lydia_k55-base-1735707540.jpg</h2>
+            <button class="copy-button" onclick="copyToClipboard('11-kaleidosky-lydia_k55-base-1735707540.jpg')">Copy</button>
+            <img src="11-kaleidosky-lydia_k55-base-1735707540.jpg" alt="11-kaleidosky-lydia_k55-base-1735707540.jpg" onclick="openImage(this)">
+        </div>
+        <div class="poster-item base">
+            <h2>18-magicland-dj_snowwolf-base-1735707599.jpg</h2>
+            <button class="copy-button" onclick="copyToClipboard('18-magicland-dj_snowwolf-base-1735707599.jpg')">Copy</button>
+            <img src="18-magicland-dj_snowwolf-base-1735707599.jpg" alt="18-magicland-dj_snowwolf-base-1735707599.jpg" onclick="openImage(this)">
+        </div>
+        <div class="poster-item base">
+            <h2>10-deviate-lydia_k55-base-1735707540.jpg</h2>
+            <button class="copy-button" onclick="copyToClipboard('10-deviate-lydia_k55-base-1735707540.jpg')">Copy</button>
+            <img src="10-deviate-lydia_k55-base-1735707540.jpg" alt="10-deviate-lydia_k55-base-1735707540.jpg" onclick="openImage(this)">
+        </div>
+    </div>
 </div>
 
 <div id="kaleidosky" class="tabcontent">
     <h1>Live kaleidosky Poster</h1>
     <div class="main-poster-row">
-        <div>
-            <span>https://lydiasevelt.github.io/kaleidosky.jpg</span><br>
-            <button class="copy-button" onclick="copyToClipboard('kaleidosky.jpg')">Copy Link</button><br>
-            <img src="kaleidosky.jpg" alt="kaleidosky.jpg" class="kaleidosky" onclick="openImage(this)">
+        <div class="poster-item">
+            <span>https://lydiasevelt.github.io/kaleidosky.jpg</span>
+            <button class="copy-button" onclick="copyToClipboard('kaleidosky.jpg')">Copy Link</button>
+            <img src="kaleidosky.jpg" alt="kaleidosky.jpg" onclick="openImage(this)">
         </div>
     </div>
 
     <h1>Current Posters In Rotation - kaleidosky</h1>
-    <ul>
-        <li>
-            <h2>11-kaleidosky-lydia_k55-base-1735707540.jpg <button onclick="copyToClipboard('11-kaleidosky-lydia_k55-base-1735707540.jpg')">Copy</button></h2>
-            <img src="11-kaleidosky-lydia_k55-base-1735707540.jpg" alt="11-kaleidosky-lydia_k55-base-1735707540.jpg" class="base" onclick="openImage(this)">
-        </li>
-    </ul>
+    <div class="poster-row">
+        <div class="poster-item base">
+            <h2>11-kaleidosky-lydia_k55-base-1735707540.jpg</h2>
+            <button class="copy-button" onclick="copyToClipboard('11-kaleidosky-lydia_k55-base-1735707540.jpg')">Copy</button>
+            <img src="11-kaleidosky-lydia_k55-base-1735707540.jpg" alt="11-kaleidosky-lydia_k55-base-1735707540.jpg" onclick="openImage(this)">
+        </div>
+    </div>
 </div>
 
 <div id="magicland" class="tabcontent">
     <h1>Live magicland Poster</h1>
     <div class="main-poster-row">
-        <div>
-            <span>https://lydiasevelt.github.io/magicland.jpg</span><br>
-            <button class="copy-button" onclick="copyToClipboard('magicland.jpg')">Copy Link</button><br>
-            <img src="magicland.jpg" alt="magicland.jpg" class="magicland" onclick="openImage(this)">
+        <div class="poster-item">
+            <span>https://lydiasevelt.github.io/magicland.jpg</span>
+            <button class="copy-button" onclick="copyToClipboard('magicland.jpg')">Copy Link</button>
+            <img src="magicland.jpg" alt="magicland.jpg" onclick="openImage(this)">
         </div>
     </div>
 
     <h1>Current Posters In Rotation - magicland</h1>
-    <ul>
-        <li>
-            <h2>18-magicland-dj_snowwolf-base-1735707599.jpg <button onclick="copyToClipboard('18-magicland-dj_snowwolf-base-1735707599.jpg')">Copy</button></h2>
-            <img src="18-magicland-dj_snowwolf-base-1735707599.jpg" alt="18-magicland-dj_snowwolf-base-1735707599.jpg" class="base" onclick="openImage(this)">
-        </li>
-    </ul>
+    <div class="poster-row">
+        <div class="poster-item base">
+            <h2>18-magicland-dj_snowwolf-base-1735707599.jpg</h2>
+            <button class="copy-button" onclick="copyToClipboard('18-magicland-dj_snowwolf-base-1735707599.jpg')">Copy</button>
+            <img src="18-magicland-dj_snowwolf-base-1735707599.jpg" alt="18-magicland-dj_snowwolf-base-1735707599.jpg" onclick="openImage(this)">
+        </div>
+    </div>
 </div>
 
 <div id="deviate" class="tabcontent">
     <h1>Live deviate Poster</h1>
     <div class="main-poster-row">
-        <div>
-            <span>https://lydiasevelt.github.io/deviate.jpg</span><br>
-            <button class="copy-button" onclick="copyToClipboard('deviate.jpg')">Copy Link</button><br>
-            <img src="deviate.jpg" alt="deviate.jpg" class="deviate" onclick="openImage(this)">
+        <div class="poster-item">
+            <span>https://lydiasevelt.github.io/deviate.jpg</span>
+            <button class="copy-button" onclick="copyToClipboard('deviate.jpg')">Copy Link</button>
+            <img src="deviate.jpg" alt="deviate.jpg" onclick="openImage(this)">
         </div>
     </div>
 
     <h1>Current Posters In Rotation - deviate</h1>
-    <ul>
-        <li>
-            <h2>10-deviate-lydia_k55-base-1735707540.jpg <button onclick="copyToClipboard('10-deviate-lydia_k55-base-1735707540.jpg')">Copy</button></h2>
-            <img src="10-deviate-lydia_k55-base-1735707540.jpg" alt="10-deviate-lydia_k55-base-1735707540.jpg" class="base" onclick="openImage(this)">
-        </li>
-    </ul>
+    <div class="poster-row">
+        <div class="poster-item base">
+            <h2>10-deviate-lydia_k55-base-1735707540.jpg</h2>
+            <button class="copy-button" onclick="copyToClipboard('10-deviate-lydia_k55-base-1735707540.jpg')">Copy</button>
+            <img src="10-deviate-lydia_k55-base-1735707540.jpg" alt="10-deviate-lydia_k55-base-1735707540.jpg" onclick="openImage(this)">
+        </div>
+    </div>
 </div>
 
 <script>
@@ -270,7 +222,7 @@
 
     function copyToClipboard(text) {
         navigator.clipboard.writeText(text).then(function() {
-            //alert('Copied to clipboard: ' + text);
+            // Optionally alert or indicate success
         }, function(err) {
             console.error('Could not copy text: ', err);
         });
