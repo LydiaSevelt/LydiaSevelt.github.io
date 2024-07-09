@@ -49,13 +49,7 @@
             text-align: center;
             margin-bottom: 20px;
         }
-        .nodisp {
-            border: 2px solid yellow;
-        }
-        .base {
-            border: 2px solid red;
-        }
-        .poster-grid {
+       .poster-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 20px;
@@ -114,9 +108,43 @@
             transform: scale(1.05);
             border-color: lightblue;
         }
-
-        .base img {
-            border-color: red;
+        .poster-item-nodisp {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+        .poster-item-nodisp img {
+            width: 150px;
+            height: auto;
+            cursor: pointer;
+            border: 2px solid yellow;
+            align-items: center;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .poster-item-nodisp img:hover {
+            transform: scale(1.05);
+            border-color: lightblue;
+        }
+        .poster-item-base {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+        .poster-item-base img {
+            width: 150px;
+            height: auto;
+            cursor: pointer;
+            border: 2px solid yellow;
+            align-items: center;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .poster-item-base img:hover {
+            transform: scale(1.05);
+            border-color: lightblue;
         }
         .copy-button {
             display: block;
