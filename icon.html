@@ -209,8 +209,8 @@
     <button class="tablinks" onclick="openTab(event, 'all')">All Images</button>
     <button class="tablinks" onclick="openTab(event, 'kaleidosky')">kaleidosky</button>
     <button class="tablinks" onclick="openTab(event, 'icon')">icon</button>
-    <button class="tablinks" onclick="openTab(event, 'magicland')">magicland</button>
     <button class="tablinks" onclick="openTab(event, 'deviate')">deviate</button>
+    <button class="tablinks" onclick="openTab(event, 'magicland')">magicland</button>
 </div>
 
 <div id="all" class="tabcontent">
@@ -268,6 +268,21 @@
             <div class="poster-title">Expires: Tuesday, December 31, 2024, 11:59:00 AM</div>
         </div>
         <div class="poster-item">
+            <img src="21-deviate-lydia_k55-1732960800.jpg" alt="21-deviate-lydia_k55-1732960800.jpg" onclick="openImage(this)">
+            <div class="poster-title">21-deviate-lydia_k55-1732960800.jpg</div>
+            <button class="copy-button" onclick="copyToClipboard('21-deviate-lydia_k55-1732960800.jpg')">Copy</button>
+            <div class="poster-title">Expires: Saturday, November 30, 2024, 05:00:00 AM</div>
+        </div>
+        <div class="poster-item-base">
+            <div class="tooltip">
+                <span class="tooltiptext">Not currently being displayed</span>
+                <img src="10-deviate-lydia_k55-base-1735707540.jpg" alt="10-deviate-lydia_k55-base-1735707540.jpg" class="base" onclick="openImage(this)">
+            </div>
+            <div class="poster-title">10-deviate-lydia_k55-base-1735707540.jpg</div>
+            <button class="copy-button" onclick="copyToClipboard('10-deviate-lydia_k55-base-1735707540.jpg')">Copy</button>
+            <div class="poster-title">Expires: Tuesday, December 31, 2024, 11:59:00 PM</div>
+        </div>
+        <div class="poster-item">
             <img src="19-magicland-lydia_k55-1735664340.jpg" alt="19-magicland-lydia_k55-1735664340.jpg" onclick="openImage(this)">
             <div class="poster-title">19-magicland-lydia_k55-1735664340.jpg</div>
             <button class="copy-button" onclick="copyToClipboard('19-magicland-lydia_k55-1735664340.jpg')">Copy</button>
@@ -281,12 +296,6 @@
             <div class="poster-title">18-magicland-dj_snowwolf-base-1735707599.jpg</div>
             <button class="copy-button" onclick="copyToClipboard('18-magicland-dj_snowwolf-base-1735707599.jpg')">Copy</button>
             <div class="poster-title">Expires: Tuesday, December 31, 2024, 11:59:59 PM</div>
-        </div>
-        <div class="poster-item">
-            <img src="10-deviate-lydia_k55-base-1735707540.jpg" alt="10-deviate-lydia_k55-base-1735707540.jpg" onclick="openImage(this)">
-            <div class="poster-title">10-deviate-lydia_k55-base-1735707540.jpg</div>
-            <button class="copy-button" onclick="copyToClipboard('10-deviate-lydia_k55-base-1735707540.jpg')">Copy</button>
-            <div class="poster-title">Expires: Tuesday, December 31, 2024, 11:59:00 PM</div>
         </div>
     </div>
 </div>
@@ -339,6 +348,39 @@
     </div>
 </div>
 
+<div id="deviate" class="tabcontent">
+    <h1>Live deviate Poster</h1>
+    <div class="poster-grid">
+        <div class="poster-item">
+            <img src="https://lydiasevelt.github.io/deviate.jpg" alt="https://lydiasevelt.github.io/deviate.jpg" onclick="openImage(this)">
+            <div class="poster-title">https://lydiasevelt.github.io/deviate.jpg</div>
+            <button class="copy-button" onclick="copyToClipboard('https://lydiasevelt.github.io/deviate.jpg')">Copy Link</button>
+        </div>
+    </div>
+
+   <div class="divider"></div>
+
+
+    <h1>Current Posters In Rotation - deviate</h1>
+    <div class="poster-grid">
+        <div class="poster-item">
+            <img src="21-deviate-lydia_k55-1732960800.jpg" alt="21-deviate-lydia_k55-1732960800.jpg" onclick="openImage(this)">
+            <div class="poster-title">21-deviate-lydia_k55-1732960800.jpg</div>
+            <button class="copy-button" onclick="copyToClipboard('21-deviate-lydia_k55-1732960800.jpg')">Copy</button>
+            <div class="poster-title">Expires: Saturday, November 30, 2024, 05:00:00 AM</div>
+        </div>
+        <div class="poster-item-base">
+            <div class="tooltip">
+                <span class="tooltiptext">Not currently being displayed</span>
+                <img src="10-deviate-lydia_k55-base-1735707540.jpg" alt="10-deviate-lydia_k55-base-1735707540.jpg" class="base" onclick="openImage(this)">
+            </div>
+            <div class="poster-title">10-deviate-lydia_k55-base-1735707540.jpg</div>
+            <button class="copy-button" onclick="copyToClipboard('10-deviate-lydia_k55-base-1735707540.jpg')">Copy</button>
+            <div class="poster-title">Expires: Tuesday, December 31, 2024, 11:59:00 PM</div>
+        </div>
+    </div>
+</div>
+
 <div id="magicland" class="tabcontent">
     <h1>Live magicland Poster</h1>
     <div class="poster-grid">
@@ -368,30 +410,6 @@
             <div class="poster-title">18-magicland-dj_snowwolf-base-1735707599.jpg</div>
             <button class="copy-button" onclick="copyToClipboard('18-magicland-dj_snowwolf-base-1735707599.jpg')">Copy</button>
             <div class="poster-title">Expires: Tuesday, December 31, 2024, 11:59:59 PM</div>
-        </div>
-    </div>
-</div>
-
-<div id="deviate" class="tabcontent">
-    <h1>Live deviate Poster</h1>
-    <div class="poster-grid">
-        <div class="poster-item">
-            <img src="https://lydiasevelt.github.io/deviate.jpg" alt="https://lydiasevelt.github.io/deviate.jpg" onclick="openImage(this)">
-            <div class="poster-title">https://lydiasevelt.github.io/deviate.jpg</div>
-            <button class="copy-button" onclick="copyToClipboard('https://lydiasevelt.github.io/deviate.jpg')">Copy Link</button>
-        </div>
-    </div>
-
-   <div class="divider"></div>
-
-
-    <h1>Current Posters In Rotation - deviate</h1>
-    <div class="poster-grid">
-        <div class="poster-item">
-            <img src="10-deviate-lydia_k55-base-1735707540.jpg" alt="10-deviate-lydia_k55-base-1735707540.jpg" onclick="openImage(this)">
-            <div class="poster-title">10-deviate-lydia_k55-base-1735707540.jpg</div>
-            <button class="copy-button" onclick="copyToClipboard('10-deviate-lydia_k55-base-1735707540.jpg')">Copy</button>
-            <div class="poster-title">Expires: Tuesday, December 31, 2024, 11:59:00 PM</div>
         </div>
     </div>
 </div>
