@@ -207,6 +207,7 @@
 <body>
 <div class="tabs">
     <button class="tablinks" onclick="openTab(event, 'all')">All Images</button>
+    <button class="tablinks" onclick="openTab(event, 'rizumu')">rizumu</button>
     <button class="tablinks" onclick="openTab(event, 'icon')">icon</button>
     <button class="tablinks" onclick="openTab(event, 'kaleidosky')">kaleidosky</button>
     <button class="tablinks" onclick="openTab(event, 'roadtrip')">roadtrip</button>
@@ -255,6 +256,12 @@
     <h1>Current Posters In Rotation - Main</h1>
     <div class="poster-grid">
         <div class="poster-item">
+            <img src="6-rizumu-lydia_k55-1750507248.jpg" alt="6-rizumu-lydia_k55-1750507248.jpg" onclick="openImage(this)">
+            <div class="poster-title">6-rizumu-lydia_k55-1750507248.jpg</div>
+            <button class="copy-button" onclick="copyToClipboard('6-rizumu-lydia_k55-1750507248.jpg')">Copy</button>
+            <div class="poster-title">Expires: Saturday, June 21, 2025, 08:00:48 AM</div>
+        </div>
+        <div class="poster-item">
             <img src="5-icon-lydia_k55-1767199020.jpg" alt="5-icon-lydia_k55-1767199020.jpg" onclick="openImage(this)">
             <div class="poster-title">5-icon-lydia_k55-1767199020.jpg</div>
             <button class="copy-button" onclick="copyToClipboard('5-icon-lydia_k55-1767199020.jpg')">Copy</button>
@@ -271,6 +278,30 @@
             <div class="poster-title">3-roadtrip-lydia_k55-base-1767243599.jpg</div>
             <button class="copy-button" onclick="copyToClipboard('3-roadtrip-lydia_k55-base-1767243599.jpg')">Copy</button>
             <div class="poster-title">Expires: Wednesday, December 31, 2025, 11:59:59 PM</div>
+        </div>
+    </div>
+</div>
+
+<div id="rizumu" class="tabcontent">
+    <h1>Live rizumu Poster</h1>
+    <div class="poster-grid">
+        <div class="poster-item">
+            <img src="https://lydiasevelt.github.io/rizumu.jpg" alt="https://lydiasevelt.github.io/rizumu.jpg" onclick="openImage(this)">
+            <div class="poster-title">https://lydiasevelt.github.io/rizumu.jpg</div>
+            <button class="copy-button" onclick="copyToClipboard('https://lydiasevelt.github.io/rizumu.jpg')">Copy Link</button>
+        </div>
+    </div>
+
+   <div class="divider"></div>
+
+
+    <h1>Current Posters In Rotation - rizumu</h1>
+    <div class="poster-grid">
+        <div class="poster-item">
+            <img src="6-rizumu-lydia_k55-1750507248.jpg" alt="6-rizumu-lydia_k55-1750507248.jpg" onclick="openImage(this)">
+            <div class="poster-title">6-rizumu-lydia_k55-1750507248.jpg</div>
+            <button class="copy-button" onclick="copyToClipboard('6-rizumu-lydia_k55-1750507248.jpg')">Copy</button>
+            <div class="poster-title">Expires: Saturday, June 21, 2025, 08:00:48 AM</div>
         </div>
     </div>
 </div>
@@ -375,4 +406,4 @@
         newWindow.document.write("<html><head><title>" + img.alt + "</title></head><body style='margin:0'><img src='" + img.src + "' style='width:100%'></body></html>");
     }
 
-document.querySelector(".tablinks:nth-child(4)").click();</script></body></html>
+document.querySelector(".tablinks:nth-child(5)").click();</script></body></html>
