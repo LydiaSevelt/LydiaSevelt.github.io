@@ -207,6 +207,7 @@
 <body>
 <div class="tabs">
     <button class="tablinks" onclick="openTab(event, 'all')">All Images</button>
+    <button class="tablinks" onclick="openTab(event, 'vvvibe')">vvvibe</button>
     <button class="tablinks" onclick="openTab(event, 'mellowmondays')">mellowmondays</button>
     <button class="tablinks" onclick="openTab(event, 'icon')">icon</button>
     <button class="tablinks" onclick="openTab(event, 'kaleidosky')">kaleidosky</button>
@@ -257,6 +258,12 @@
     <h1>Current Posters In Rotation - Main</h1>
     <div class="poster-grid">
         <div class="poster-item">
+            <img src="14-vvvibe-dj_snowwolf-1763298000.jpg" alt="14-vvvibe-dj_snowwolf-1763298000.jpg" onclick="openImage(this)">
+            <div class="poster-title">14-vvvibe-dj_snowwolf-1763298000.jpg</div>
+            <button class="copy-button" onclick="copyToClipboard('14-vvvibe-dj_snowwolf-1763298000.jpg')">Copy</button>
+            <div class="poster-title">Expires: Sunday, November 16, 2025, 08:00:00 AM</div>
+        </div>
+        <div class="poster-item">
             <img src="6-mellowmondays-lydia_k55-base-1788264000.jpg" alt="6-mellowmondays-lydia_k55-base-1788264000.jpg" onclick="openImage(this)">
             <div class="poster-title">6-mellowmondays-lydia_k55-base-1788264000.jpg</div>
             <button class="copy-button" onclick="copyToClipboard('6-mellowmondays-lydia_k55-base-1788264000.jpg')">Copy</button>
@@ -294,6 +301,30 @@
             <div class="poster-title">3-roadtrip-lydia_k55-base-1767243599.jpg</div>
             <button class="copy-button" onclick="copyToClipboard('3-roadtrip-lydia_k55-base-1767243599.jpg')">Copy</button>
             <div class="poster-title">Expires: Wednesday, December 31, 2025, 11:59:59 PM</div>
+        </div>
+    </div>
+</div>
+
+<div id="vvvibe" class="tabcontent">
+    <h1>Live vvvibe Poster</h1>
+    <div class="poster-grid">
+        <div class="poster-item">
+            <img src="https://lydiasevelt.github.io/vvvibe.jpg" alt="https://lydiasevelt.github.io/vvvibe.jpg" onclick="openImage(this)">
+            <div class="poster-title">https://lydiasevelt.github.io/vvvibe.jpg</div>
+            <button class="copy-button" onclick="copyToClipboard('https://lydiasevelt.github.io/vvvibe.jpg')">Copy Link</button>
+        </div>
+    </div>
+
+   <div class="divider"></div>
+
+
+    <h1>Current Posters In Rotation - vvvibe</h1>
+    <div class="poster-grid">
+        <div class="poster-item">
+            <img src="14-vvvibe-dj_snowwolf-1763298000.jpg" alt="14-vvvibe-dj_snowwolf-1763298000.jpg" onclick="openImage(this)">
+            <div class="poster-title">14-vvvibe-dj_snowwolf-1763298000.jpg</div>
+            <button class="copy-button" onclick="copyToClipboard('14-vvvibe-dj_snowwolf-1763298000.jpg')">Copy</button>
+            <div class="poster-title">Expires: Sunday, November 16, 2025, 08:00:00 AM</div>
         </div>
     </div>
 </div>
@@ -455,4 +486,4 @@
         newWindow.document.write("<html><head><title>" + img.alt + "</title></head><body style='margin:0'><img src='" + img.src + "' style='width:100%'></body></html>");
     }
 
-document.querySelector(".tablinks:nth-child(3)").click();</script></body></html>
+document.querySelector(".tablinks:nth-child(4)").click();</script></body></html>
