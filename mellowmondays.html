@@ -209,8 +209,8 @@
     <button class="tablinks" onclick="openTab(event, 'all')">All Images</button>
     <button class="tablinks" onclick="openTab(event, 'vvvibe')">vvvibe</button>
     <button class="tablinks" onclick="openTab(event, 'mellowmondays')">mellowmondays</button>
-    <button class="tablinks" onclick="openTab(event, 'icon')">icon</button>
     <button class="tablinks" onclick="openTab(event, 'kaleidosky')">kaleidosky</button>
+    <button class="tablinks" onclick="openTab(event, 'icon')">icon</button>
     <button class="tablinks" onclick="openTab(event, 'discofab')">discofab</button>
     <button class="tablinks" onclick="openTab(event, 'roadtrip')">roadtrip</button>
 </div>
@@ -270,16 +270,25 @@
             <div class="poster-title">Expires: Tuesday, September 01, 2026, 08:00:00 AM</div>
         </div>
         <div class="poster-item">
+            <img src="15-kaleidosky-lydia_k55-1763305200.jpg" alt="15-kaleidosky-lydia_k55-1763305200.jpg" onclick="openImage(this)">
+            <div class="poster-title">15-kaleidosky-lydia_k55-1763305200.jpg</div>
+            <button class="copy-button" onclick="copyToClipboard('15-kaleidosky-lydia_k55-1763305200.jpg')">Copy</button>
+            <div class="poster-title">Expires: Sunday, November 16, 2025, 10:00:00 AM</div>
+        </div>
+        <div class="poster-item-base">
+            <div class="tooltip">
+                <span class="tooltiptext">Not currently being displayed</span>
+                <img src="4-kaleidosky-lydia_k55-base-1767243599.jpg" alt="4-kaleidosky-lydia_k55-base-1767243599.jpg" class="base" onclick="openImage(this)">
+            </div>
+            <div class="poster-title">4-kaleidosky-lydia_k55-base-1767243599.jpg</div>
+            <button class="copy-button" onclick="copyToClipboard('4-kaleidosky-lydia_k55-base-1767243599.jpg')">Copy</button>
+            <div class="poster-title">Expires: Wednesday, December 31, 2025, 11:59:59 PM</div>
+        </div>
+        <div class="poster-item">
             <img src="5-icon-lydia_k55-1767199020.jpg" alt="5-icon-lydia_k55-1767199020.jpg" onclick="openImage(this)">
             <div class="poster-title">5-icon-lydia_k55-1767199020.jpg</div>
             <button class="copy-button" onclick="copyToClipboard('5-icon-lydia_k55-1767199020.jpg')">Copy</button>
             <div class="poster-title">Expires: Wednesday, December 31, 2025, 11:37:00 AM</div>
-        </div>
-        <div class="poster-item">
-            <img src="4-kaleidosky-lydia_k55-base-1767243599.jpg" alt="4-kaleidosky-lydia_k55-base-1767243599.jpg" onclick="openImage(this)">
-            <div class="poster-title">4-kaleidosky-lydia_k55-base-1767243599.jpg</div>
-            <button class="copy-button" onclick="copyToClipboard('4-kaleidosky-lydia_k55-base-1767243599.jpg')">Copy</button>
-            <div class="poster-title">Expires: Wednesday, December 31, 2025, 11:59:59 PM</div>
         </div>
         <div class="poster-item">
             <img src="12-discofab-lydia_k55-1763816880.jpg" alt="12-discofab-lydia_k55-1763816880.jpg" onclick="openImage(this)">
@@ -344,6 +353,39 @@
     </div>
 </div>
 
+<div id="kaleidosky" class="tabcontent">
+    <h1>Live kaleidosky Poster</h1>
+    <div class="poster-grid">
+        <div class="poster-item">
+            <img src="https://lydiasevelt.github.io/kaleidosky.jpg" alt="https://lydiasevelt.github.io/kaleidosky.jpg" onclick="openImage(this)">
+            <div class="poster-title">https://lydiasevelt.github.io/kaleidosky.jpg</div>
+            <button class="copy-button" onclick="copyToClipboard('https://lydiasevelt.github.io/kaleidosky.jpg')">Copy Link</button>
+        </div>
+    </div>
+
+   <div class="divider"></div>
+
+
+    <h1>Current Posters In Rotation - kaleidosky</h1>
+    <div class="poster-grid">
+        <div class="poster-item">
+            <img src="15-kaleidosky-lydia_k55-1763305200.jpg" alt="15-kaleidosky-lydia_k55-1763305200.jpg" onclick="openImage(this)">
+            <div class="poster-title">15-kaleidosky-lydia_k55-1763305200.jpg</div>
+            <button class="copy-button" onclick="copyToClipboard('15-kaleidosky-lydia_k55-1763305200.jpg')">Copy</button>
+            <div class="poster-title">Expires: Sunday, November 16, 2025, 10:00:00 AM</div>
+        </div>
+        <div class="poster-item-base">
+            <div class="tooltip">
+                <span class="tooltiptext">Not currently being displayed</span>
+                <img src="4-kaleidosky-lydia_k55-base-1767243599.jpg" alt="4-kaleidosky-lydia_k55-base-1767243599.jpg" class="base" onclick="openImage(this)">
+            </div>
+            <div class="poster-title">4-kaleidosky-lydia_k55-base-1767243599.jpg</div>
+            <button class="copy-button" onclick="copyToClipboard('4-kaleidosky-lydia_k55-base-1767243599.jpg')">Copy</button>
+            <div class="poster-title">Expires: Wednesday, December 31, 2025, 11:59:59 PM</div>
+        </div>
+    </div>
+</div>
+
 <div id="icon" class="tabcontent">
     <h1>Live icon Poster</h1>
     <div class="poster-grid">
@@ -364,30 +406,6 @@
             <div class="poster-title">5-icon-lydia_k55-1767199020.jpg</div>
             <button class="copy-button" onclick="copyToClipboard('5-icon-lydia_k55-1767199020.jpg')">Copy</button>
             <div class="poster-title">Expires: Wednesday, December 31, 2025, 11:37:00 AM</div>
-        </div>
-    </div>
-</div>
-
-<div id="kaleidosky" class="tabcontent">
-    <h1>Live kaleidosky Poster</h1>
-    <div class="poster-grid">
-        <div class="poster-item">
-            <img src="https://lydiasevelt.github.io/kaleidosky.jpg" alt="https://lydiasevelt.github.io/kaleidosky.jpg" onclick="openImage(this)">
-            <div class="poster-title">https://lydiasevelt.github.io/kaleidosky.jpg</div>
-            <button class="copy-button" onclick="copyToClipboard('https://lydiasevelt.github.io/kaleidosky.jpg')">Copy Link</button>
-        </div>
-    </div>
-
-   <div class="divider"></div>
-
-
-    <h1>Current Posters In Rotation - kaleidosky</h1>
-    <div class="poster-grid">
-        <div class="poster-item">
-            <img src="4-kaleidosky-lydia_k55-base-1767243599.jpg" alt="4-kaleidosky-lydia_k55-base-1767243599.jpg" onclick="openImage(this)">
-            <div class="poster-title">4-kaleidosky-lydia_k55-base-1767243599.jpg</div>
-            <button class="copy-button" onclick="copyToClipboard('4-kaleidosky-lydia_k55-base-1767243599.jpg')">Copy</button>
-            <div class="poster-title">Expires: Wednesday, December 31, 2025, 11:59:59 PM</div>
         </div>
     </div>
 </div>
